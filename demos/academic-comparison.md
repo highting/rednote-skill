@@ -7,13 +7,13 @@ math: katex
 <svg viewBox="0 0 1440 720" role="img" aria-label="相同切向更新的对比：直接更新增加范数，径向归一化将临时端点投影回原范数等长弧">
   <defs>
     <marker id="weight-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0 0 L12 6 L0 12 Z" fill="#3B5BDB" />
+      <path d="M0 0 L12 6 L0 12 Z" fill="#3568B0" />
     </marker>
     <marker id="step-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0 0 L12 6 L0 12 Z" fill="#0891B2" />
+      <path d="M0 0 L12 6 L0 12 Z" fill="#827C72" />
     </marker>
     <marker id="projection-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0 0 L12 6 L0 12 Z" fill="#D97706" />
+      <path d="M0 0 L12 6 L0 12 Z" fill="#B85C2E" />
     </marker>
   </defs>
   <text class="figure-title" x="40" y="65">保留切向步长，或投影回原范数</text>
@@ -26,15 +26,15 @@ math: katex
   <line x1="520" y1="510" x2="520" y2="270" class="vector-update" marker-end="url(#step-arrow)" />
   <line x1="170" y1="510" x2="520" y2="270" class="vector-primary" marker-end="url(#weight-arrow)" />
   <path d="M494 510 L494 484 L520 484" class="geometry-mark" />
-  <circle cx="170" cy="510" r="5" fill="#263238" />
+  <circle cx="170" cy="510" r="5" fill="#2F2D29" />
   <line x1="890" y1="510" x2="1240" y2="510" class="vector-primary" marker-end="url(#weight-arrow)" />
   <line x1="1240" y1="510" x2="1240" y2="270" class="vector-update" marker-end="url(#step-arrow)" />
   <line x1="890" y1="510" x2="1240" y2="270" class="vector-reference" />
   <line x1="890" y1="510" x2="1178.6551" y2="312.0651" class="vector-primary" marker-end="url(#weight-arrow)" />
   <line x1="1240" y1="270" x2="1178.6551" y2="312.0651" class="vector-contrast" marker-end="url(#projection-arrow)" />
   <path d="M1214 510 L1214 484 L1240 484" class="geometry-mark" />
-  <circle cx="890" cy="510" r="5" fill="#263238" />
-  <circle cx="1240" cy="270" r="6" fill="#FFFFFF" stroke="#64748B" stroke-width="2" />
+  <circle cx="890" cy="510" r="5" fill="#2F2D29" />
+  <circle cx="1240" cy="270" r="6" fill="#FAF9F5" stroke="#6B675F" stroke-width="2" />
 </svg>
 <div class="figure-label primary" style="left:23%;top:77%">\(W_t\)</div>
 <div class="figure-label primary" style="left:73%;top:77%">\(W_t\)</div>

@@ -66,7 +66,7 @@ KATEX_DIR = ASSETS_DIR / "vendor" / "katex"
 
 DEFAULT_WIDTH = 1080
 DEFAULT_HEIGHT = 1440
-ACADEMIC_BACKGROUND = '#F7F4ED'
+ACADEMIC_BACKGROUND = '#FAF9F5'
 MI_SANS_STACK = "'MiSans', 'Microsoft YaHei', 'Source Han Sans CN', 'PingFang SC', sans-serif"
 MATH_MODES = ('off', 'katex')
 KATEX_VERSION = '0.16.11'
@@ -352,7 +352,7 @@ def generate_cover_html(metadata: dict, theme: str, width: int, height: int) -> 
     bg = COVER_BACKGROUNDS.get(theme, COVER_BACKGROUNDS['default'])
     title_gradient = TITLE_GRADIENTS.get(theme, TITLE_GRADIENTS['default'])
     if theme == 'academic':
-        title_paint = 'color: #263238;'
+        title_paint = 'color: #2F2D29;'
     else:
         title_paint = f'''background: {title_gradient};
             -webkit-background-clip: text;
@@ -985,7 +985,7 @@ async def export_html_document(documents: list, output_dir: str,
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>小红书分页技术文档</title>
 <style>
-body {{ margin: 0; background: #EAE5DB; }}
+body {{ margin: 0; background: #F3F1E9; }}
 main {{ width: {width}px; margin: 0 auto; padding: 24px 0; }}
 section {{ margin-bottom: 24px; width: {width}px; height: {height}px; }}
 iframe {{ display: block; border: 0; background: {ACADEMIC_BACKGROUND}; }}
@@ -1083,7 +1083,7 @@ def main():
   terminal            - 终端/命令行风格
   sketch              - 手绘素描风格（显式选择）
   minimalist          - 极简现代风格
-  academic            - 默认技术风格（浅暖米色底 + 钴蓝／青蓝／琥珀橙）
+  academic            - 默认技术风格（浅暖米色底 + 单一学术蓝，橙色仅作必要对照）
 ''',
     )
     parser.add_argument('markdown_file', help='Markdown 文件路径')

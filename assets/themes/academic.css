@@ -1,23 +1,25 @@
 /* Academic — 学术技术卡片。SPDX-License-Identifier: MIT */
 
-.card-container { --academic-background: #F7F4ED; background: var(--academic-background); }
+.card-container { --academic-background: #FAF9F5; background: var(--academic-background); }
 
 .card-inner {
-  --academic-blue: #3B5BDB;
-  --academic-cyan: #0891B2;
-  --academic-orange: #D97706;
-  --academic-blue-soft: #EEF2FF;
-  --academic-cyan-soft: #ECFEFF;
-  --academic-orange-soft: #FFF7ED;
-  --academic-ink: #263238;
-  --academic-muted: #64748B;
-  --academic-reference: #B8C1CB;
+  --academic-blue: #3568B0;
+  /* Legacy update classes stay neutral; highlight explicitly with primary/contrast. */
+  --academic-cyan: var(--academic-reference);
+  --academic-orange: #B85C2E;
+  --academic-blue-soft: #E9EEF3;
+  --academic-cyan-soft: #F3F1E9;
+  --academic-orange-soft: #F4E9E0;
+  --academic-ink: #2F2D29;
+  --academic-muted: #6B675F;
+  --academic-reference: #827C72;
+  --academic-border: #DCD7CD;
   --font-heading: 'Cambria', 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'SimSun', serif;
   --font-body: 'Cambria', 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'SimSun', serif;
   --font-mono: 'SF Mono', 'Consolas', 'Liberation Mono', monospace;
   background: var(--academic-background);
   color: var(--academic-ink);
-  border: 1px solid var(--academic-reference);
+  border: 1px solid var(--academic-border);
   border-radius: 14px;
   box-shadow: none;
   backdrop-filter: none;
@@ -65,15 +67,15 @@
 .card-content pre {
   margin: 24px 0;
   padding: 20px 24px;
-  background: #F0EDE5;
-  border: 1px solid var(--academic-reference);
+  background: #F3F1E9;
+  border: 1px solid var(--academic-border);
   border-radius: 8px;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 .card-content code { font-family: var(--font-mono); }
 .card-content table { color: var(--academic-ink); background: var(--academic-background); }
-.card-content th { background: var(--academic-blue-soft); }
+.card-content th { background: #F3F1E9; }
 .card-content .katex-display { margin: 0.6em 0; }
 
 /* 颜色标识对象；普通说明仍保持墨灰。 */
@@ -105,7 +107,7 @@
 /* 容器按需使用；仅对应比较使用等宽列，其他布局显式指定比例。 */
 .card-content .figure-panel {
   padding: 24px;
-  border: 1px solid var(--figure-accent, var(--academic-reference));
+  border: 1px solid var(--figure-accent, var(--academic-border));
   border-radius: 8px;
   background: var(--academic-background);
 }
