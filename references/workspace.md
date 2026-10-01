@@ -1,3 +1,5 @@
+> **路由说明：本页记录旧Markdown→小红书/academic兼容流程。** 新请求先按 `learning`、`blog`、`report`、`rednote` 选择场景，见[统一流程](content-workflow.md)与[场景说明](content-scenes.md)。新输入是 `inputs/<分类>/<主题>/`，现有 `blogs/` 也可输入新流程。旧正文全转PNG、3:4、暖米色禁白、字体及配文约定仅用于旧入口或明确选择academic，不覆盖新scene的暖石白默认。`html/images` 只选辅助工具；精确数值、shape、算法状态、公式与几何关系仍用程序图，不因images模式强制生图。
+
 # 长期博客工作区
 
 ## 日常使用

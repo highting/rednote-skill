@@ -43,6 +43,8 @@ python -m playwright install chromium-headless-shell
 
 KaTeX 0.16.11 的 JS、CSS、字体已内置在 `assets/vendor/katex`。无需 Node.js 或 npm 即可渲染公式；资源来源及许可见 [third-party.md](third-party.md)。
 
+新四场景的源码模板使用可嵌入的Noto Sans SC作为离线中文回退。字体包不纳入Git；首次构建或运行模板测试前显式执行 `python -X utf8 scripts/download_content_fonts.py`，它下载固定版本并核对SHA-256。缓存受Git忽略，之后构建和成品阅读不再请求字体服务器。已有允许嵌入的字体可通过构建器 `--font` 使用；复用本地Fontsource包的方法见[字体说明](../assets/vendor/noto-sans-sc/README.md)。
+
 ## 验证与示例
 
 ```powershell

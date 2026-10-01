@@ -1,3 +1,5 @@
+> **路由说明：本页记录旧Markdown→小红书/academic兼容流程。** 新请求先按 `learning`、`blog`、`report`、`rednote` 选择场景，见[统一流程](content-workflow.md)与[场景说明](content-scenes.md)。新输入是 `inputs/<分类>/<主题>/`，现有 `blogs/` 也可输入新流程。旧正文全转PNG、3:4、暖米色禁白、字体及配文约定仅用于旧入口或明确选择academic，不覆盖新scene的暖石白默认。`html/images` 只选辅助工具；精确数值、shape、算法状态、公式与几何关系仍用程序图，不因images模式强制生图。
+
 # HTML 模式：HTML＋SVG 分页渲染为图片
 
 正文统一用本流程生成小红书 PNG，包括选择生图模式时的正文。HTML 排版连续段落与公式，HTML 模式的非正文视觉再用 SVG 绘制；逐页输出固定画幅 PNG。HTML、SVG 和 Markdown 保留为制作源文件。

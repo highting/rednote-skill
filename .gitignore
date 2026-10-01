@@ -33,3 +33,6 @@ Thumbs.db
 .idea/
 node_modules/
 npm-debug.log*
+
+# Downloaded Chinese font cache (rebuild with download_content_fonts.py)
+assets/vendor/noto-sans-sc/font-bundle.json
